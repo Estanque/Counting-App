@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import com.dinloq.Counting_App.framework.TextViewEditor;
 
 public class MainActivity extends Activity
 {
+	Boolean directionRight = false;
 
 	TextView tvNum1;
 	TextView tvNum2;
@@ -52,12 +54,28 @@ public class MainActivity extends Activity
 		buttonReverse     = (Button)      findViewById(R.id.switchReverse);
 	}
 
-	private void onNumClick(View v){
+	public void onNumClick(View v){
 		switch (v.getId()){
 			case R.id.button0:
-
+				TextViewEditor.addText(tvResult,0,directionRight);
+			break;
+			case R.id.button1:
+				TextViewEditor.addText(tvResult,0,directionRight);
 			break;
 		}
-
 	}
+
+	public void onRevClick(View v){
+		directionRight = !directionRight;
+		if (directionRight) {
+			buttonReverse.setText("->");
+		} else {
+			buttonReverse.setText("<-");
+		}
+	}
+
+	public void onCheckClick(View v){
+		tvResult.setText("");
+	}
+
 }
