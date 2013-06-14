@@ -22,5 +22,11 @@
 		    android:name=".SettingsActivity"
 		    android:theme="@android:style/Theme.Holo.Light.NoActionBar"
 		    android:label="Settings"/>
+	    <activity
+		    android:name=".TestListActivity"
+		    android:label="List Act-ty"/>
+	    <activity
+		    android:name=".ChooseDialog"
+		    android:label="Mode select"/>
     </application>
 </manifest>
