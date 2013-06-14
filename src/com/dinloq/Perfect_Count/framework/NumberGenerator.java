@@ -1,4 +1,4 @@
-package com.dinloq.Counting_App.framework;
+package com.dinloq.Perfect_Count.framework;
 
 import java.util.Random;
 

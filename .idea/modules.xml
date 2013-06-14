@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Counting App.iml" filepath="$PROJECT_DIR$/Counting App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Perfect Count.iml" filepath="$PROJECT_DIR$/Perfect Count.iml" />
     </modules>
   </component>
 </project>

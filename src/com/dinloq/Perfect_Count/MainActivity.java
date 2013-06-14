@@ -1,13 +1,14 @@
-package com.dinloq.Counting_App;
+package com.dinloq.Perfect_Count;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.dinloq.Counting_App.framework.NumberGenerator;
-import com.dinloq.Counting_App.framework.TextViewEditor;
+import com.dinloq.Perfect_Count.framework.NumberGenerator;
+import com.dinloq.Perfect_Count.framework.TextViewEditor;
 
 public class MainActivity extends Activity
 {
@@ -124,12 +125,13 @@ public class MainActivity extends Activity
 		if (toCheck==result){
 			initialize();
 			Toast toast = Toast.makeText(getApplicationContext(),"Right!",Toast.LENGTH_SHORT);
+			toast.setGravity(Gravity.TOP,0,0);
 			toast.show();
 		} else {
 			Toast toast = Toast.makeText(getApplicationContext(),"Wrong!",Toast.LENGTH_SHORT);
+			toast.setGravity(Gravity.TOP,0,0);
 			toast.show();
 		}
 			tvResult.setText("");
 	}
-
 }

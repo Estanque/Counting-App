@@ -1,7 +1,7 @@
 /*___Generated_by_IDEA___*/
 
 /** Automatically generated file. DO NOT MODIFY */
-package com.dinloq.Counting_App;
+package com.dinloq.Perfect_Count;
 
 public final class BuildConfig {
     public final static boolean DEBUG = true;
