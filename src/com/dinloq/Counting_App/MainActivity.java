@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.dinloq.Counting_App.framework.NumberGenerator;
 import com.dinloq.Counting_App.framework.TextViewEditor;
 
@@ -114,12 +115,19 @@ public class MainActivity extends Activity
 	}
 
 	public void onCheckClick(View v){
-		int toCheck = Integer.parseInt(tvResult.getText().toString());
+		int toCheck = 0;
+		if (tvResult.getText().toString().length()>0){
+			toCheck = Integer.parseInt(tvResult.getText().toString());
+		}
+
 		int result = NumberGenerator.getAnswer(Num1,Num2,0);
 		if (toCheck==result){
 			initialize();
+			Toast toast = Toast.makeText(getApplicationContext(),"Right!",Toast.LENGTH_SHORT);
+			toast.show();
 		} else {
-
+			Toast toast = Toast.makeText(getApplicationContext(),"Wrong!",Toast.LENGTH_SHORT);
+			toast.show();
 		}
 			tvResult.setText("");
 	}
