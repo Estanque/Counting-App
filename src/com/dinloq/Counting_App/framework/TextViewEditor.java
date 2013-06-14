@@ -14,7 +14,8 @@ public class TextViewEditor {
 	}
 	public static void setTextView(TextView tv, int number){
 		if (tv!=null){
-			tv.setText(number);
+			tv.setText( String.valueOf(number));
+
 		}
 	}
 }

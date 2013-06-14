@@ -38,20 +38,20 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 		setupWidgets();
-
+		initialize();
     }
 
 	//TODO add timer
 	private void initialize() {
 		Num1 = NumberGenerator.getRandomNumber();
 		Num2 = NumberGenerator.getRandomNumber();
-		//tvNum1.setText(Num1);
-
+		tvNum1.setText(String.valueOf(Num1));
+		tvNum2.setText(String.valueOf(Num2));
 	}
 
 
 	private void setupWidgets () {
-		tvNum1      = (TextView)    findViewById(R.id.textViewNum1);
+		tvNum1      = (TextView)    findViewById(R.id.textViewCh01);
 		tvNum2      = (TextView)    findViewById(R.id.textViewNum2);
 		tvResult    = (TextView)    findViewById(R.id.textViewResult);
 		button0     = (Button)      findViewById(R.id.button0);
@@ -114,14 +114,14 @@ public class MainActivity extends Activity
 	}
 
 	public void onCheckClick(View v){
-		//TextViewEditor.setTextView(tvNum1,100);
 		int toCheck = Integer.parseInt(tvResult.getText().toString());
 		int result = NumberGenerator.getAnswer(Num1,Num2,0);
 		if (toCheck==result){
 			initialize();
 		} else {
-			tvResult.setText("");
+
 		}
+			tvResult.setText("");
 	}
 
 }

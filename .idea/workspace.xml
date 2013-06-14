@@ -20,28 +20,31 @@
         <option name="nightMode" value="notnight" />
         <option name="targetHashString" value="android-15" />
         <option name="theme" value="Theme.Holo.Light.NoActionBar.Fullscreen" />
-        <option name="visible" value="false" />
       </GlobalState>
     </option>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d5b1752-f873-456b-ac07-53dc516f145f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Counting_App/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Counting_App/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Counting_App/framework/TextViewEditor.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Counting_App/framework/TextViewEditor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Counting App.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/main.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371186261167" ignored="false" />
+    <file path="/main.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371189001072" ignored="false" />
     <file path="/strings.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1370702259184" ignored="false" />
     <file path="/a.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371120533826" ignored="false" />
-    <file path="/Dummy.txt" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371188779482" ignored="false" />
+    <file path="/Dummy.txt" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371188847581" ignored="false" />
     <file path="/Randomizer.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371180244528" ignored="false" />
-    <file path="/MainActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371188420888" ignored="false" />
+    <file path="/MainActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371189723069" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1370778929938" ignored="false" />
     <file path="/a.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371120531693" ignored="false" />
     <file path="/sample.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1370779334239" ignored="false" />
-    <file path="/TextViewEditor.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371188391014" ignored="false" />
+    <file path="/TextViewEditor.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371189531615" ignored="false" />
     <file path="/NumberGenerator.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371183825185" ignored="false" />
-    <file path="/fragment.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371185262950" ignored="false" />
+    <file path="/fragment.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371189419823" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +117,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dinloq/Counting_App/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="19" selection-start="477" selection-end="477" vertical-scroll-proportion="0.6021798">
+            <state line="105" column="69" selection-start="3097" selection-end="3097" vertical-scroll-proportion="0.87857145">
               <folding />
             </state>
           </provider>
@@ -123,7 +126,7 @@
       <file leaf-file-name="TextViewEditor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dinloq/Counting_App/framework/TextViewEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="28" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
+            <state line="18" column="9" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,7 +135,7 @@
       <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="46" selection-start="1047" selection-end="1047" vertical-scroll-proportion="-9.52">
+            <state line="12" column="27" selection-start="473" selection-end="473" vertical-scroll-proportion="-8.16">
               <folding />
             </state>
           </provider>
@@ -184,8 +187,8 @@
         <option value="$PROJECT_DIR$/src/com/dinloq/Counting_App/framework/Randomizer.java" />
         <option value="$PROJECT_DIR$/src/com/dinloq/Counting_App/framework/NumberGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/dinloq/Counting_App/framework/TextViewEditor.java" />
-        <option value="$PROJECT_DIR$/src/com/dinloq/Counting_App/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/src/com/dinloq/Counting_App/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -194,6 +197,22 @@
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -338,14 +357,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="preferences.toDoOptions" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="/extensions/staged/install.rdf" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="80A354043049910583" />
     <property name="DEBUGGABLE_DEVICE" value="80A354043049910583" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -539,7 +561,11 @@
       <created>1371188812927</created>
       <updated>1371188812927</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add some code">
+      <created>1371188867276</created>
+      <updated>1371188867276</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -568,7 +594,7 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6040956" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.6040956" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29590288" sideWeight="0.6040956" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -576,7 +602,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39590445" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -602,8 +628,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <value>
         <are-packages-shown value="false" />
@@ -657,6 +683,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Counting App" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Counting-App" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -753,6 +791,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Counting_App/framework/TextViewEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="9" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="42" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
@@ -762,7 +807,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="46" selection-start="1047" selection-end="1047" vertical-scroll-proportion="-9.52">
+        <state line="12" column="27" selection-start="473" selection-end="473" vertical-scroll-proportion="-8.16">
           <folding />
         </state>
       </provider>
@@ -770,20 +815,111 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Counting_App/framework/TextViewEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dinloq/Counting_App/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="19" selection-start="477" selection-end="477" vertical-scroll-proportion="0.6021798">
+        <state line="105" column="69" selection-start="3097" selection-end="3097" vertical-scroll-proportion="0.87857145">
           <folding />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android (Counting App)|Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Counting App</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 
