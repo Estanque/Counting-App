@@ -25,8 +25,7 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d5b1752-f873-456b-ac07-53dc516f145f" name="Default" comment="Realized DialogAlert choice between modes">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+    <list default="true" id="8d5b1752-f873-456b-ac07-53dc516f145f" name="Default" comment="FragmentDialog Experience">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Counting App.iws" />
@@ -34,7 +33,7 @@
     <file path="/main.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371196389321" ignored="false" />
     <file path="/strings.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371200363661" ignored="false" />
     <file path="/a.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371120533826" ignored="false" />
-    <file path="/Dummy.txt" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371236723460" ignored="false" />
+    <file path="/Dummy.txt" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371238534854" ignored="false" />
     <file path="/Randomizer.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371180244528" ignored="false" />
     <file path="/MainActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371191454467" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371209583738" ignored="false" />
@@ -51,7 +50,7 @@
     <file path="/settings.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371206132493" ignored="false" />
     <file path="/SettingsActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371206258706" ignored="false" />
     <file path="/TestListActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371231327950" ignored="false" />
-    <file path="/ChooseDialog.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371236197207" ignored="false" />
+    <file path="/ChooseDialog.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371238581310" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="C:\Users\Oldry\IdeaProjects\Counting-App" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
@@ -191,8 +190,11 @@
       <file leaf-file-name="ChooseDialog.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/ChooseDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.4232143">
-              <folding />
+            <state line="32" column="46" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.44444445">
+              <folding>
+                <element signature="e#1549#1847#0" expanded="true" />
+                <element signature="e#1845#1846#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -684,7 +686,11 @@
       <created>1371228327520</created>
       <updated>1371228327520</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="FragmentDialog Experience">
+      <created>1371236861778</created>
+      <updated>1371236861778</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -726,7 +732,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6698873" sideWeight="0.6458716" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20307167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20307167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.7798635" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -784,7 +790,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Realized DialogAlert choice between modes" />
+    <option name="LAST_COMMIT_MESSAGE" value="FragmentDialog Experience" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -803,6 +809,7 @@
     <MESSAGE value="Added toasts" />
     <MESSAGE value="Added menu, settings activity" />
     <MESSAGE value="Realized DialogAlert choice between modes" />
+    <MESSAGE value="FragmentDialog Experience" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -900,17 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/TestListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#806#1078#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/settings.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
@@ -935,10 +931,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/TestListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#806#1078#0" expanded="true" />
+            <element signature="e#1073#1074#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/ChooseDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.4232143">
-          <folding />
+        <state line="32" column="46" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.44444445">
+          <folding>
+            <element signature="e#1549#1847#0" expanded="true" />
+            <element signature="e#1845#1846#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
