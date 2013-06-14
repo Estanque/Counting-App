@@ -5,11 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import com.dinloq.Counting_App.framework.NumberGenerator;
 import com.dinloq.Counting_App.framework.TextViewEditor;
 
 public class MainActivity extends Activity
 {
-	Boolean directionRight = false;
+	Boolean directionRight = true;
 
 	TextView tvNum1;
 	TextView tvNum2;
@@ -27,6 +28,9 @@ public class MainActivity extends Activity
 	Button buttonCheck;
 	Button buttonReverse;
 
+	private int Num1 = 1;
+	private int Num2 = 1;
+
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -34,7 +38,17 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 		setupWidgets();
+
     }
+
+	//TODO add timer
+	private void initialize() {
+		Num1 = NumberGenerator.getRandomNumber();
+		Num2 = NumberGenerator.getRandomNumber();
+		//tvNum1.setText(Num1);
+
+	}
+
 
 	private void setupWidgets () {
 		tvNum1      = (TextView)    findViewById(R.id.textViewNum1);
@@ -60,11 +74,36 @@ public class MainActivity extends Activity
 				TextViewEditor.addText(tvResult,0,directionRight);
 			break;
 			case R.id.button1:
-				TextViewEditor.addText(tvResult,0,directionRight);
+				TextViewEditor.addText(tvResult,1,directionRight);
+			break;
+			case R.id.button2:
+				TextViewEditor.addText(tvResult,2,directionRight);
+			break;
+			case R.id.button3:
+				TextViewEditor.addText(tvResult,3,directionRight);
+			break;
+			case R.id.button4:
+				TextViewEditor.addText(tvResult,4,directionRight);
+			break;
+			case R.id.button5:
+				TextViewEditor.addText(tvResult,5,directionRight);
+			break;
+			case R.id.button6:
+				TextViewEditor.addText(tvResult,6,directionRight);
+			break;
+			case R.id.button7:
+				TextViewEditor.addText(tvResult,7,directionRight);
+			break;
+			case R.id.button8:
+				TextViewEditor.addText(tvResult,8,directionRight);
+			break;
+			case R.id.button9:
+				TextViewEditor.addText(tvResult,9,directionRight);
 			break;
 		}
 	}
 
+	//TODO допилить правильное отображение при нажатиях(Особенно первом, иконка не меняется)
 	public void onRevClick(View v){
 		directionRight = !directionRight;
 		if (directionRight) {
@@ -75,7 +114,14 @@ public class MainActivity extends Activity
 	}
 
 	public void onCheckClick(View v){
-		tvResult.setText("");
+		//TextViewEditor.setTextView(tvNum1,100);
+		int toCheck = Integer.parseInt(tvResult.getText().toString());
+		int result = NumberGenerator.getAnswer(Num1,Num2,0);
+		if (toCheck==result){
+			initialize();
+		} else {
+			tvResult.setText("");
+		}
 	}
 
 }
