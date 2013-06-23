@@ -11,7 +11,7 @@
             android:theme="@android:style/Theme.Holo.Light.NoActionBar">
         </activity>
 		<activity
-			android:name=".MenuActivity"
+			android:name="MenuActivity"
 			android:theme="@android:style/Theme.Holo.Light.NoActionBar"
 			android:label="Main menu">
 			<intent-filter>
@@ -20,14 +20,8 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name=".SettingsActivity"
+			android:name="SettingsActivity"
 			android:theme="@android:style/Theme.Holo.Light.NoActionBar"
 			android:label="Settings"/>
-	    <activity
-		    android:name=".MenuActivity"
-		    android:label="Main Menu"/>
-	    <activity
-		    android:name=".SettingsActivity"
-		    android:label="Settings"/>
     </application>
 	</manifest>
