@@ -13,6 +13,11 @@
 		<item>Multiplication</item>
 		<item>Subtraction</item>
 	</string-array>
+	<string-array name="operation_icon">
+		<item>+</item>
+		<item>*</item>
+		<item>-</item>
+	</string-array>
 
 	<!-- Settings strings   -->
 	<string name="set_reverse">Always reverse mode</string>

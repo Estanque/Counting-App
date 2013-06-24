@@ -39,6 +39,9 @@ public class MainActivity extends Activity
 	private void loadSettings() {
 		//Get mode of training
 		TRAIN_MODE = getIntent().getIntExtra(MenuActivity.CHOOSE_MODE_STRING_EXTRA, 0);
+		String[] operationIcons = getResources().getStringArray(R.array.operation_icon);
+		TextView tvOperation = (TextView) findViewById(R.id.tvOperation);
+		tvOperation.setText(operationIcons[TRAIN_MODE]);
 		//Get preferences
 		SharedPreferences sPref = getSharedPreferences("settings", MODE_PRIVATE);
 		directionRight = !sPref.getBoolean("set_reverse", false);

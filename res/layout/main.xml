@@ -17,9 +17,10 @@
 			android:textStyle="bold"
 			android:id="@+id/textViewCh01"/>
 	<TextView
+			android:id="@+id/tvOperation"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:text="+"
+			android:text=""
 			android:textSize="20dp"/>
 	<TextView
 			android:layout_width="fill_parent"
