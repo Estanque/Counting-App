@@ -1,9 +1,9 @@
 package com.dinloq.Perfect_Count;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,7 +13,7 @@ import com.dinloq.Perfect_Count.framework.TextViewEditor;
 
 public class MainActivity extends Activity
 {
-	Boolean directionRight = true;
+	Boolean directionRight;
 
 	TextView tvNum1;
 	TextView tvNum2;
@@ -23,6 +23,7 @@ public class MainActivity extends Activity
 
 	private int Num1 = 1;
 	private int Num2 = 1;
+	private int TRAIN_MODE = 0;
 
     /** Called when the activity is first created. */
     @Override
@@ -36,6 +37,9 @@ public class MainActivity extends Activity
     }
 
 	private void loadSettings() {
+		//Get mode of training
+		TRAIN_MODE = getIntent().getIntExtra(MenuActivity.CHOOSE_MODE_STRING_EXTRA, 0);
+		//Get preferences
 		SharedPreferences sPref = getSharedPreferences("settings", MODE_PRIVATE);
 		directionRight = !sPref.getBoolean("set_reverse", false);
 		setReverseButtonText();
@@ -82,7 +86,6 @@ public class MainActivity extends Activity
 		}
 	}
 
-	//TODO допилить правильное отображение при нажатиях(Особенно первом, иконка не меняется)
 	public void setReverseButtonText(){
 		if (directionRight) {
 			buttonReverse.setText("->");
@@ -96,7 +99,7 @@ public class MainActivity extends Activity
 		if (tvResult.getText().toString().length()>0){
 			toCheck = Integer.parseInt(tvResult.getText().toString());
 		}
-		int result = NumberGenerator.getAnswer(Num1,Num2,0);
+		int result = NumberGenerator.getAnswer(Num1,Num2,TRAIN_MODE);
 		if (toCheck==result){
 			initialize();
 			Toast.makeText(getApplicationContext(),"Right!",Toast.LENGTH_SHORT).show();

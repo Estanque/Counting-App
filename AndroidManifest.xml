@@ -23,5 +23,9 @@
 			android:name="SettingsActivity"
 			android:theme="@android:style/Theme.Holo.Light.NoActionBar"
 			android:label="Settings"/>
+	    <activity
+		    android:name=".ChooseModeActivity"
+		    android:label="@string/menu_choose_title"
+		    android:theme="@android:style/Theme.Holo.Light.Dialog"/>
     </application>
 	</manifest>

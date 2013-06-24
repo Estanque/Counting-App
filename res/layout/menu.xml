@@ -34,7 +34,7 @@
 			android:layout_gravity="center_horizontal"
 			android:layout_margin="@dimen/menu_margin"
 			android:layout_weight="1"
-			android:text="@string/name_begin"
+			android:text="@string/menu_begin"
 			android:onClick="onClick"
 			android:id="@+id/btnBegin"/>
 		<Button
@@ -44,7 +44,7 @@
 			android:onClick="onClick"
 			android:layout_weight="1"
 			android:layout_gravity="center_horizontal"
-			android:text="@string/settings"
+			android:text="@string/menu_settings"
 			android:id="@+id/btnSettings"/>
 		<Button
 			android:layout_height="match_parent"
@@ -53,7 +53,7 @@
 			android:layout_weight="1"
 			android:onClick="onClick"
 			android:layout_gravity="center_horizontal"
-			android:text="@string/statistic"
+			android:text="@string/menu_statistic"
 			android:id="@+id/btnStatistic"/>
 		<Button
 			android:layout_height="match_parent"
@@ -62,7 +62,7 @@
 			android:onClick="onClick"
 			android:layout_weight="1"
 			android:layout_gravity="center_horizontal"
-			android:text="@string/exit"
+			android:text="@string/menu_exit"
 			android:id="@+id/btnExit"/>
 
 	</LinearLayout>
