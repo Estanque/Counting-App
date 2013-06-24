@@ -10,7 +10,6 @@
 	    android:layout_height="wrap_content"
 		android:orientation="vertical">
 		<TextView
-			android:background=""
 			android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:layout_gravity="center_horizontal"
@@ -22,4 +21,37 @@
 			android:layout_height="3dp"
 			android:background="@android:color/darker_gray"/>
 	    </LinearLayout>
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/scrollView">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_margin="10dp"
+			android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+			<Switch
+				android:id="@+id/swReverse"
+				android:layout_width="match_parent"
+				android:layout_margin="5dp"
+				android:text="@string/set_reverse"
+				android:layout_height="wrap_content"/>
+			<Switch
+				android:layout_width="match_parent"
+				android:layout_margin="5dp"
+				android:text="Switch"
+				android:layout_height="wrap_content"/>
+			<Button
+				android:onClick="onClick"
+				android:id="@+id/btnSave"
+				android:layout_marginTop="30dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="bottom|center_horizontal"
+				android:text="@string/set_save"/>
+		    </LinearLayout>
+		</ScrollView>
+
+
+
 </LinearLayout>

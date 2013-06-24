@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 			  android:orientation="vertical"
-			  android:layout_margin="5dp"
 			  android:layout_width="fill_parent"
 			  android:layout_height="fill_parent">
 	<View
@@ -53,16 +52,22 @@
 		android:stretchColumns="*">
 		<TableRow>
 			<Button android:id="@+id/button1"
+			        android:tag="1"
+			        android:layout_weight="1"
 					android:layout_height="wrap_content"
 					android:layout_width="fill_parent"
 					android:onClick="onNumClick"
 					android:text="1"/>
 			<Button android:id="@+id/button2"
+			        android:tag="2"
+			        android:layout_weight="1"
 					android:layout_height="wrap_content"
 					android:layout_width="fill_parent"
 					android:onClick="onNumClick"
 					android:text="2"/>
 			<Button android:id="@+id/button3"
+			        android:tag="3"
+			        android:layout_weight="1"
 					android:layout_height="wrap_content"
 					android:layout_width="fill_parent"
 					android:onClick="onNumClick"
@@ -70,16 +75,19 @@
 		</TableRow>
 		<TableRow>
 			<Button android:id="@+id/button4"
+			        android:tag="4"
 					android:layout_height="wrap_content"
 					android:layout_width="fill_parent"
 					android:onClick="onNumClick"
 					android:text="4"/>
 			<Button android:id="@+id/button5"
+			        android:tag="5"
 					android:layout_height="wrap_content"
 					android:layout_width="fill_parent"
 					android:onClick="onNumClick"
 					android:text="5"/>
 			<Button android:id="@+id/button6"
+			        android:tag="6"
 					android:layout_height="wrap_content"
 					android:layout_width="fill_parent"
 					android:onClick="onNumClick"
@@ -87,16 +95,19 @@
 		</TableRow>
 		<TableRow>
 			<Button android:id="@+id/button7"
+			        android:tag="7"
 					android:layout_height="wrap_content"
 					android:layout_width="fill_parent"
 					android:onClick="onNumClick"
 					android:text="7"/>
 			<Button android:id="@+id/button8"
+			        android:tag="8"
 					android:layout_height="wrap_content"
 					android:layout_width="fill_parent"
 					android:onClick="onNumClick"
 					android:text="8"/>
 			<Button android:id="@+id/button9"
+			        android:tag="9"
 					android:layout_height="wrap_content"
 					android:layout_width="fill_parent"
 					android:onClick="onNumClick"
@@ -108,23 +119,33 @@
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="5dp"
 				android:layout_marginRight="5dp"
-				android:onClick="onRevClick"
+				android:onClick="onClick"
 				android:text="->"
-				android:id="@+id/switchReverse"/>
+				android:id="@+id/btnReverse"/>
 			<Button android:id="@+id/button0"
+			        android:tag="0"
 					android:layout_height="wrap_content"
 					android:layout_width="fill_parent"
 					android:onClick="onNumClick"
 					android:text="0"/>
 			<Button
-					android:id="@+id/buttonCheck"
+					android:id="@+id/btnCheck"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_marginLeft="5dp"
 					android:layout_marginRight="5dp"
-					android:onClick="onCheckClick"
+					android:onClick="onClick"
 					android:text="@android:string/ok"/>
-
+		</TableRow>
+		<TableRow>
+			<Button
+				android:onClick="onClick"
+				android:layout_marginTop="16dp"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+			    android:layout_height="wrap_content"
+			    android:text="Clear"
+			    android:id="@+id/btnClear"/>
 		</TableRow>
 		</TableLayout>
 </LinearLayout>

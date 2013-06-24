@@ -1,6 +1,7 @@
 package com.dinloq.Perfect_Count;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -17,16 +18,6 @@ public class MainActivity extends Activity
 	TextView tvNum1;
 	TextView tvNum2;
 	TextView tvResult;
-	Button button1;
-	Button button2;
-	Button button3;
-	Button button4;
-	Button button5;
-	Button button6;
-	Button button7;
-	Button button8;
-	Button button9;
-	Button button0;
 	Button buttonCheck;
 	Button buttonReverse;
 
@@ -40,8 +31,15 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 		setupWidgets();
+	    loadSettings();
 		initialize();
     }
+
+	private void loadSettings() {
+		SharedPreferences sPref = getSharedPreferences("settings", MODE_PRIVATE);
+		directionRight = !sPref.getBoolean("set_reverse", false);
+		setReverseButtonText();
+	}
 
 	//TODO add timer
 	private void initialize() {
@@ -56,58 +54,36 @@ public class MainActivity extends Activity
 		tvNum1      = (TextView)    findViewById(R.id.textViewCh01);
 		tvNum2      = (TextView)    findViewById(R.id.textViewNum2);
 		tvResult    = (TextView)    findViewById(R.id.textViewResult);
-		button0     = (Button)      findViewById(R.id.button0);
-		button1     = (Button)      findViewById(R.id.button1);
-		button2     = (Button)      findViewById(R.id.button2);
-		button3     = (Button)      findViewById(R.id.button3);
-		button4     = (Button)      findViewById(R.id.button4);
-		button5     = (Button)      findViewById(R.id.button5);
-		button6     = (Button)      findViewById(R.id.button6);
-		button7     = (Button)      findViewById(R.id.button7);
-		button8     = (Button)      findViewById(R.id.button8);
-		button9     = (Button)      findViewById(R.id.button9);
-		buttonCheck = (Button)      findViewById(R.id.buttonCheck);
-		buttonReverse     = (Button)      findViewById(R.id.switchReverse);
+		buttonCheck = (Button)      findViewById(R.id.btnCheck);
+		buttonReverse     = (Button)      findViewById(R.id.btnReverse);
 	}
 
 	public void onNumClick(View v){
+		// number of dial button gets from tag field in xml
+		Button temp = (Button) findViewById(v.getId());
+		String str = temp.getTag().toString();
+		TextViewEditor.addText(tvResult,str,directionRight);
+	}
+
+
+	//TODO Why the btnReverse is so necessary? so many excess code...
+	public void onClick(View v){
 		switch (v.getId()){
-			case R.id.button0:
-				TextViewEditor.addText(tvResult,0,directionRight);
-			break;
-			case R.id.button1:
-				TextViewEditor.addText(tvResult,1,directionRight);
-			break;
-			case R.id.button2:
-				TextViewEditor.addText(tvResult,2,directionRight);
-			break;
-			case R.id.button3:
-				TextViewEditor.addText(tvResult,3,directionRight);
-			break;
-			case R.id.button4:
-				TextViewEditor.addText(tvResult,4,directionRight);
-			break;
-			case R.id.button5:
-				TextViewEditor.addText(tvResult,5,directionRight);
-			break;
-			case R.id.button6:
-				TextViewEditor.addText(tvResult,6,directionRight);
-			break;
-			case R.id.button7:
-				TextViewEditor.addText(tvResult,7,directionRight);
-			break;
-			case R.id.button8:
-				TextViewEditor.addText(tvResult,8,directionRight);
-			break;
-			case R.id.button9:
-				TextViewEditor.addText(tvResult,9,directionRight);
-			break;
+			case R.id.btnReverse:
+				directionRight = !directionRight;
+				setReverseButtonText();
+				break;
+			case R.id.btnCheck:
+				checkResult();
+				break;
+			case R.id.btnClear:
+				tvResult.setText("");
+				break;
 		}
 	}
 
 	//TODO допилить правильное отображение при нажатиях(Особенно первом, иконка не меняется)
-	public void onRevClick(View v){
-		directionRight = !directionRight;
+	public void setReverseButtonText(){
 		if (directionRight) {
 			buttonReverse.setText("->");
 		} else {
@@ -115,23 +91,18 @@ public class MainActivity extends Activity
 		}
 	}
 
-	public void onCheckClick(View v){
+	public void checkResult(){
 		int toCheck = 0;
 		if (tvResult.getText().toString().length()>0){
 			toCheck = Integer.parseInt(tvResult.getText().toString());
 		}
-
 		int result = NumberGenerator.getAnswer(Num1,Num2,0);
 		if (toCheck==result){
 			initialize();
-			Toast toast = Toast.makeText(getApplicationContext(),"Right!",Toast.LENGTH_SHORT);
-			toast.setGravity(Gravity.TOP,0,0);
-			toast.show();
+			Toast.makeText(getApplicationContext(),"Right!",Toast.LENGTH_SHORT).show();
 		} else {
-			Toast toast = Toast.makeText(getApplicationContext(),"Wrong!",Toast.LENGTH_SHORT);
-			toast.setGravity(Gravity.TOP,0,0);
-			toast.show();
+			Toast.makeText(getApplicationContext(),"Wrong!",Toast.LENGTH_SHORT).show();
 		}
-			tvResult.setText("");
+		tvResult.setText("");
 	}
 }

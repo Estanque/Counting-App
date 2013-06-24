@@ -12,13 +12,18 @@ public class MenuActivity extends Activity {
 	}
 
 	public void onClick(View v){
+		Intent intent;
 		switch (v.getId()){
 			case R.id.btnBegin:
-
+				intent = new Intent(this, MainActivity.class);
+				startActivity(intent);
 				break;
 			case R.id.btnSettings:
-				Intent intent = new Intent(this,SettingsActivity.class);
+				intent = new Intent(this, SettingsActivity.class);
 				startActivity(intent);
+				break;
+			case R.id.btnStatistic:
+				//TODO Statistic Activity
 				break;
 			case R.id.btnExit:
 				finish();

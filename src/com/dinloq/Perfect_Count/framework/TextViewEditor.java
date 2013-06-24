@@ -4,18 +4,17 @@ import android.widget.TextView;
 
 public class TextViewEditor {
 
-	public static void addText(TextView tv,int number,boolean rightDirect){
+	public static void addText(TextView tv,String number,boolean rightDirect){
 		//Добавление числа в строку в зависимости от направления
 		if (rightDirect) {
-			tv.setText(tv.getText() + String.valueOf(number));
+			tv.setText(tv.getText() + number);
 		} else {
-			tv.setText(String.valueOf(number) + tv.getText());
+			tv.setText(number + tv.getText());
 		}
 	}
 	public static void setTextView(TextView tv, int number){
 		if (tv!=null){
 			tv.setText( String.valueOf(number));
-
 		}
 	}
 }

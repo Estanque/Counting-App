@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Perfect Count</string>
-	<string name="menu_settings">Settings</string>
+	<!-- Menu strings -->
 	<string name="name_begin">Begin</string>
+	<string name="menu_settings">Settings</string>
 	<string name="settings">Settings</string>
 	<string name="exit">Exit</string>
+	<string name="statistic">Statistic</string>
+	<!-- Settings strings   -->
+	<string name="set_reverse">Always reverse mode</string>
+	<string name="set_save">Save</string>
+
 
 	</resources>

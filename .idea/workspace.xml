@@ -15,7 +15,7 @@
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
       <GlobalState>
-        <option name="device" value="2.7in QVGA" />
+        <option name="device" value="3.2in HVGA slider (ADP1)" />
         <option name="dockMode" value="" />
         <option name="nightMode" value="notnight" />
         <option name="targetHashString" value="android-15" />
@@ -24,38 +24,40 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d5b1752-f873-456b-ac07-53dc516f145f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+    <list default="true" id="8d5b1752-f873-456b-ac07-53dc516f145f" name="Default" comment="Added">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MenuActivity.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MenuActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/SettingsActivity.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/SettingsActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/TextViewEditor.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/TextViewEditor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/dimens.xml" afterPath="$PROJECT_DIR$/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/menu.xml" afterPath="$PROJECT_DIR$/res/layout/menu.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/settings.xml" afterPath="$PROJECT_DIR$/res/layout/settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Counting App.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/main.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371196389321" ignored="false" />
-    <file path="/strings.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372002804420" ignored="false" />
+    <file path="/main.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372051412323" ignored="false" />
+    <file path="/strings.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372051574485" ignored="false" />
     <file path="/a.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371120533826" ignored="false" />
-    <file path="/Dummy.txt" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372005987729" ignored="false" />
+    <file path="/Dummy.txt" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372051699706" ignored="false" />
     <file path="/Randomizer.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371180244528" ignored="false" />
-    <file path="/MainActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371191454467" ignored="false" />
+    <file path="/MainActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372050929946" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371209583738" ignored="false" />
     <file path="/a.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371120531693" ignored="false" />
     <file path="/sample.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1370779334239" ignored="false" />
-    <file path="/TextViewEditor.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371189531615" ignored="false" />
+    <file path="/TextViewEditor.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372046563932" ignored="false" />
     <file path="/NumberGenerator.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371183825185" ignored="false" />
     <file path="/fragment.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371228055948" ignored="false" />
     <file path="/a.dummy" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371196288000" ignored="false" />
     <file path="/mainMenu.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371200222025" ignored="false" />
-    <file path="/MenuActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372006279632" ignored="false" />
+    <file path="/MenuActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372047010838" ignored="false" />
     <file path="/colors.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372007363189" ignored="false" />
-    <file path="/menu.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372008542323" ignored="false" />
-    <file path="/settings.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372008122032" ignored="false" />
-    <file path="/SettingsActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372006857498" ignored="false" />
-    <file path="/dimens.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372008108444" ignored="false" />
+    <file path="/menu.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372046347679" ignored="false" />
+    <file path="/settings.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372051585504" ignored="false" />
+    <file path="/SettingsActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372051327540" ignored="false" />
+    <file path="/dimens.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372046209703" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,19 +118,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="26" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingsActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SettingsActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/SettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="42" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+            <state line="30" column="51" selection-start="773" selection-end="773" vertical-scroll-proportion="0.4733146">
               <folding />
             </state>
           </provider>
@@ -137,37 +130,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="20" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MenuActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="38" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/menu.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="29" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.44913927">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dimens.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="39" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+            <state line="20" column="23" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,20 +138,20 @@
       </file>
       <file leaf-file-name="settings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/settings.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="53" selection-start="624" selection-end="647" vertical-scroll-proportion="-8.888889">
+            <state line="33" column="43" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-9.814815">
               <folding />
             </state>
           </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="colors.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="12" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+            <state line="11" column="32" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -196,22 +159,13 @@
       </file>
       <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="28" selection-start="738" selection-end="738" vertical-scroll-proportion="-11.111111">
+              <folding />
+            </state>
+          </provider>
           <provider editor-type-id="android-designer">
             <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="36" selection-start="999" selection-end="999" vertical-scroll-proportion="-16.666666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="44" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -239,24 +193,24 @@
         <option value="$PROJECT_DIR$/src/com/dinloq/Counting_App/framework/NumberGenerator.java" />
         <option value="$PROJECT_DIR$/src/com/dinloq/Counting_App/framework/TextViewEditor.java" />
         <option value="$PROJECT_DIR$/src/com/dinloq/Counting_App/MainActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/res/layout/mainMenu.xml" />
         <option value="$PROJECT_DIR$/src/com/dinloq/Counting_App/MenuActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/TextViewEditor.java" />
-        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MenuActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/SettingsActivity.java" />
         <option value="$PROJECT_DIR$/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/res/layout/settings.xml" />
         <option value="$PROJECT_DIR$/res/layout/menu.xml" />
+        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MenuActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/TextViewEditor.java" />
+        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/settings.xml" />
+        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/SettingsActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="160" />
+    <option name="x" value="232" />
     <option name="y" value="22" />
     <option name="width" value="1251" />
     <option name="height" value="860" />
@@ -305,7 +259,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -457,19 +410,20 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Facets" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="92" />
-    <property name="project.structure.proportion" value="0.15" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="109" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="104" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="/extensions/staged/install.rdf" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="113" />
@@ -484,12 +438,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="one" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
@@ -545,19 +499,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -584,6 +525,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -712,7 +666,11 @@
       <created>1372006004309</created>
       <updated>1372006004309</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Some graphical fixed&#10;">
+      <created>1372008616772</created>
+      <updated>1372008616772</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -736,28 +694,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="160" y="22" width="1251" height="860" extended-state="0" />
-    <editor active="true" />
+    <frame x="232" y="22" width="1251" height="860" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3261411" sideWeight="0.6716216" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32033196" sideWeight="0.6716216" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38566554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26184538" sideWeight="0.48783785" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26184538" sideWeight="0.67702705" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21891892" sideWeight="0.500439" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32749325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29592684" sideWeight="0.48783785" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51216215" sideWeight="0.499561" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2954357" sideWeight="0.48783785" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32297298" sideWeight="0.499561" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -812,7 +770,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added menu, settings activity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some graphical fixed&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -830,6 +788,7 @@
     <MESSAGE value="Добавлен обработчик ответов, рандомайзер.&#10;Фактически первый прототип приложения." />
     <MESSAGE value="Added toasts" />
     <MESSAGE value="Added menu, settings activity" />
+    <MESSAGE value="Some graphical fixed&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -856,16 +815,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/TextViewEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/NumberGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="0.7878049" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-mdpi/ic_launcher.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -881,30 +830,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="20" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MenuActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="38" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="26" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="42" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -916,46 +844,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="39" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+        <state line="3" column="32" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/settings.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/TextViewEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="53" selection-start="624" selection-end="647" vertical-scroll-proportion="-8.888889">
+        <state line="16" column="48" selection-start="473" selection-end="473" vertical-scroll-proportion="0.33707866">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MenuActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="36" selection-start="999" selection-end="999" vertical-scroll-proportion="-16.666666">
+        <state line="13" column="32" selection-start="348" selection-end="348" vertical-scroll-proportion="0.21067415">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="22" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.07099698">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/NumberGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="29" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.44913927">
+        <state line="19" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="0.4002809">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="28" selection-start="738" selection-end="738" vertical-scroll-proportion="-11.111111">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="23" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="43" selection-start="1178" selection-end="1178" vertical-scroll-proportion="-9.814815">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="32" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="51" selection-start="773" selection-end="773" vertical-scroll-proportion="0.4733146">
           <folding />
         </state>
       </provider>
