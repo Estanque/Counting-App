@@ -6,6 +6,7 @@ public class NumberGenerator {
 
 	private static Random random = new Random();
 
+	//TODO make different random numbers (10,100,1000,10000) is settings
 	public static int getRandomNumber(){
 		int result = random.nextInt(8999) + 1000;
 		return result;

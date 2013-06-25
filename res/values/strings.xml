@@ -29,6 +29,7 @@
 	<string name="main_wrong">Wrong:</string>
 	<string name="main_time">Time:</string>
 	<string name="main_rel">Rel:</string>
+	<string name="main_ready">Ready?</string>
 
 	<!-- Statistic strings -->
 	<string name="stat_details">Details</string>

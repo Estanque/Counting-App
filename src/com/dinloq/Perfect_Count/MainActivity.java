@@ -1,6 +1,8 @@
 package com.dinloq.Perfect_Count;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -14,6 +16,7 @@ import com.dinloq.Perfect_Count.framework.TextViewEditor;
 public class MainActivity extends Activity
 {
 	Boolean directionRight;
+	//Timer
 
 	TextView tvNum1;
 	TextView tvNum2;
@@ -32,8 +35,27 @@ public class MainActivity extends Activity
         setContentView(R.layout.main);
 		setupWidgets();
 	    loadSettings();
-		initialize();
+	    waitForReady();
     }
+
+	private void waitForReady() {
+		AlertDialog.Builder ad = new AlertDialog.Builder(MainActivity.this);
+		ad.setTitle(R.string.main_ready);
+		ad.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialogInterface, int i) {
+				initialize();
+			}
+		});
+		ad.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialogInterface, int i) {
+				finish();
+			}
+		});
+		ad.setCancelable(false);
+		ad.show();
+	}
 
 	private void loadSettings() {
 		//Get mode of training
@@ -46,10 +68,12 @@ public class MainActivity extends Activity
 		SharedPreferences sPref = getSharedPreferences("settings", MODE_PRIVATE);
 		directionRight = !sPref.getBoolean("set_reverse", false);
 		setReverseButtonText();
+		//TODO reading sql database
 	}
 
 	//TODO add timer
 	private void initialize() {
+		//Timer = start value
 		Num1 = NumberGenerator.getRandomNumber();
 		Num2 = NumberGenerator.getRandomNumber();
 		tvNum1.setText(String.valueOf(Num1));
@@ -89,7 +113,7 @@ public class MainActivity extends Activity
 		}
 	}
 
-	public void setReverseButtonText(){
+	private void setReverseButtonText(){
 		if (directionRight) {
 			buttonReverse.setText("->");
 		} else {
@@ -97,13 +121,14 @@ public class MainActivity extends Activity
 		}
 	}
 
-	public void checkResult(){
+	private void checkResult(){
 		int toCheck = 0;
 		if (tvResult.getText().toString().length()>0){
 			toCheck = Integer.parseInt(tvResult.getText().toString());
 		}
 		int result = NumberGenerator.getAnswer(Num1,Num2,TRAIN_MODE);
 		if (toCheck==result){
+			//total_time = this.time - timer; write result
 			initialize();
 			Toast.makeText(getApplicationContext(),"Right!",Toast.LENGTH_SHORT).show();
 		} else {
