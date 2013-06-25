@@ -31,5 +31,6 @@
 		    android:name=".StatisticActivity"
 		    android:label="@string/menu_statistic"
 		    android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
+	    <activity android:name=".AdminActivity"/>
     </application>
 	</manifest>

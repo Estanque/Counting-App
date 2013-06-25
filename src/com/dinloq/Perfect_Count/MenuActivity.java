@@ -31,7 +31,9 @@ public class MenuActivity extends Activity {
 				startActivity(intent);
 				break;
 			case R.id.btnExit:
-				finish();
+				intent = new Intent(this, AdminActivity.class);
+				startActivity(intent);
+				//finish();//TODO return finish
 				break;
 		}
 	}

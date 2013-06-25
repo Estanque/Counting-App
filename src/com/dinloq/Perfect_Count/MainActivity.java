@@ -44,8 +44,9 @@ public class MainActivity extends Activity
         setContentView(R.layout.main);
 		setupWidgets();
 	    loadSettings();
-	    DBHelper.addDayRecord("4","1",DBHelper.getCurrentDate(),this);//TODO remove after tests
-	    loadDataFromDB();
+	    String i = DBHelper.addDayRecord("4","1",DBHelper.getCurrentDate(),this);//TODO remove after tests
+	    Toast.makeText(this, i + "", Toast.LENGTH_SHORT).show();
+	    //loadDataFromDB();
 	    waitForReady();
     }
 
