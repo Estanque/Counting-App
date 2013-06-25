@@ -2,4 +2,5 @@
 <resources>
 	<dimen name="header_text_size">36sp</dimen>
 	<dimen name="menu_margin">16dp</dimen>
+	<dimen name="main_margin_miny">5dp</dimen>
 </resources>

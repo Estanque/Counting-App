@@ -25,7 +25,6 @@ public class MainActivity extends Activity
 	private int Num2 = 1;
 	private int TRAIN_MODE = 0;
 
-    /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -39,6 +38,7 @@ public class MainActivity extends Activity
 	private void loadSettings() {
 		//Get mode of training
 		TRAIN_MODE = getIntent().getIntExtra(MenuActivity.CHOOSE_MODE_STRING_EXTRA, 0);
+		//Setting operation TextView icon of operation
 		String[] operationIcons = getResources().getStringArray(R.array.operation_icon);
 		TextView tvOperation = (TextView) findViewById(R.id.tvOperation);
 		tvOperation.setText(operationIcons[TRAIN_MODE]);

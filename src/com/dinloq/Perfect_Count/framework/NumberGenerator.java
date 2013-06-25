@@ -16,6 +16,10 @@ public class NumberGenerator {
 		switch (operation){
 			case 0:
 				return firstNum+secondNum;
+			case 1:
+				return firstNum*secondNum;
+			//case 2:
+			//	return Math.abs(firstNum-secondNum);
 		}
 		return 0;
 	}

@@ -23,5 +23,12 @@
 	<string name="set_reverse">Always reverse mode</string>
 	<string name="set_save">Save</string>
 
+	<!-- Main strings -->
+	<string name="main_clear">Clear</string>
+	<string name="main_right">Right:</string>
+	<string name="main_wrong">Wrong:</string>
+	<string tag="relation" name="main_rel">Rel:</string>
+	<string name="main_time">Time:</string>
+
 
 	</resources>
