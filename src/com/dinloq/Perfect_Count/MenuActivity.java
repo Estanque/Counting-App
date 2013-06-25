@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 public class MenuActivity extends Activity {
 
@@ -28,7 +27,8 @@ public class MenuActivity extends Activity {
 				startActivity(intent);
 				break;
 			case R.id.btnStatistic:
-				//TODO Statistic Activity
+				intent = new Intent(this, StatisticActivity.class);
+				startActivity(intent);
 				break;
 			case R.id.btnExit:
 				finish();

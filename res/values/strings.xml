@@ -27,8 +27,11 @@
 	<string name="main_clear">Clear</string>
 	<string name="main_right">Right:</string>
 	<string name="main_wrong">Wrong:</string>
-	<string tag="relation" name="main_rel">Rel:</string>
 	<string name="main_time">Time:</string>
+	<string name="main_rel">Rel:</string>
 
+	<!-- Statistic strings -->
+	<string name="stat_details">Details</string>
+	<string name="stat_today">Today Statistic</string>
 
-	</resources>
+</resources>
