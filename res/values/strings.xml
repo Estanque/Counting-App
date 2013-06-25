@@ -28,7 +28,7 @@
 	<string name="main_right">Right:</string>
 	<string name="main_wrong">Wrong:</string>
 	<string name="main_time">Time:</string>
-	<string name="main_rel">Rel:</string>
+	<string name="main_rel">R/W:</string>
 	<string name="main_ready">Ready?</string>
 
 	<!-- Statistic strings -->

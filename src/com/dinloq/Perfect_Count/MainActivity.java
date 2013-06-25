@@ -2,25 +2,34 @@ package com.dinloq.Perfect_Count;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.ContentValues;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.dinloq.Perfect_Count.framework.DBHelper;
 import com.dinloq.Perfect_Count.framework.NumberGenerator;
 import com.dinloq.Perfect_Count.framework.TextViewEditor;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MainActivity extends Activity
 {
 	Boolean directionRight;
 	//Timer
+	//TODO Catch all values of Timer in ArrayList, after closing Activity calculate the average and write into database
+	// (avg.database + avg.this /2)
 
 	TextView tvNum1;
 	TextView tvNum2;
 	TextView tvResult;
+
 	Button buttonCheck;
 	Button buttonReverse;
 
@@ -35,8 +44,50 @@ public class MainActivity extends Activity
         setContentView(R.layout.main);
 		setupWidgets();
 	    loadSettings();
+	    DBHelper.addDayRecord("4","1",DBHelper.getCurrentDate(),this);//TODO remove after tests
+	    loadDataFromDB();
 	    waitForReady();
     }
+
+	private void loadDataFromDB() {
+		DBHelper dbHelper = new DBHelper(this);
+		SQLiteDatabase db;
+
+		db = dbHelper.getWritableDatabase();//TODO change to readable
+
+		SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
+		String date = sdf.format(new Date(System.currentTimeMillis()));
+
+		String selection = "date = ?";
+		String[] selectionArgs = new String[] { date };
+
+		Cursor c = db.query(DBHelper.TABLE_STATISTIC, null, selection, selectionArgs, null, null, null );
+
+		if (c != null) {
+			if (c.moveToFirst()) {
+				String str;
+				do {
+					str = "T: ";
+					for (String cn : c.getColumnNames()){
+						str = str.concat(cn + " = "
+							+ c.getString(c.getColumnIndex(cn)));
+					}
+					Toast.makeText(this, str, Toast.LENGTH_LONG).show();
+				} while (c.moveToNext());
+			} else
+				Toast.makeText(this, "no one record", Toast.LENGTH_SHORT).show();
+			c.close();
+		} else
+			Toast.makeText(this, "Cursor is null", Toast.LENGTH_SHORT).show();
+		dbHelper.close();
+		Toast.makeText(this, "ok", Toast.LENGTH_SHORT).show();
+	}
+
+	@Override
+	protected void onDestroy() {
+		//TODO Save changes to database
+		super.onDestroy();    //To change body of overridden methods use File | Settings | File Templates.
+	}
 
 	private void waitForReady() {
 		AlertDialog.Builder ad = new AlertDialog.Builder(MainActivity.this);
