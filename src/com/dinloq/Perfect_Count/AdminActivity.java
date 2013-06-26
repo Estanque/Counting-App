@@ -11,7 +11,9 @@ import com.dinloq.Perfect_Count.framework.DBHelper;
 import com.dinloq.Perfect_Count.framework.NumberGenerator;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class AdminActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
@@ -42,7 +44,7 @@ public class AdminActivity extends Activity {
 	private void addRandom() {
 		String right = String.valueOf(NumberGenerator.getRandomNumber());
 		String wrong = String.valueOf(NumberGenerator.getRandomNumber());
-		String time = DBHelper.getCurrentDate();
+		String time = DBHelper.getDate();
 		String test = DBHelper.addDayRecord(right, wrong, time, this);
 		Toast.makeText(this, "added "+ test, Toast.LENGTH_LONG).show();
 	}
@@ -76,41 +78,12 @@ public class AdminActivity extends Activity {
 	}
 
 	private void checkSQLday() {
-		DBHelper dbHelper = new DBHelper(this);
-		SQLiteDatabase db;
-
-		db = dbHelper.getWritableDatabase();//TODO change to readable
-
-		SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
-		String date = sdf.format(new Date(System.currentTimeMillis()));
-
-		String selection = "date = ?";
-		String[] selectionArgs = new String[] { date };
-
-		Cursor c = db.query(DBHelper.TABLE_STATISTIC, null, selection, selectionArgs, null, null, null );
-
-		if (c != null) {
-			if (c.moveToFirst()) {
-				String str;
-				do {
-					str = "R: ";
-					for (String cn : c.getColumnNames()){
-						str = str.concat(cn + " = "
-								+ c.getString(c.getColumnIndex(cn)) + " ");
-					}
-					Toast.makeText(this, str, Toast.LENGTH_LONG).show();
-				} while (c.moveToNext());
-			} else
-				Toast.makeText(this, "no one record", Toast.LENGTH_SHORT).show();
-			c.close();
-		} else
-			Toast.makeText(this, "Cursor is null", Toast.LENGTH_SHORT).show();
-		dbHelper.close();
-		Toast.makeText(this, "ok", Toast.LENGTH_SHORT).show();
+		GregorianCalendar gc = new GregorianCalendar();
+		Toast.makeText(this, gc.get(Calendar.YEAR) + "", Toast.LENGTH_SHORT).show();
 	}
 
 	private void checkDB(){
-		ContentValues cv = DBHelper.loadDataFromDB(this, DBHelper.getCurrentDate());
+		ContentValues cv = DBHelper.loadDataFromDB(this, DBHelper.getDate());
 		if (cv != null)
 			Toast.makeText(this, cv.get("date").toString(), Toast.LENGTH_SHORT).show();
 		else

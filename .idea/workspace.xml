@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidConfiguredLogFilters">
+    <filters>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="" />
+        <option name="name" value="ff" />
+        <option name="pid" value="" />
+      </filter>
+    </filters>
+  </component>
   <component name="AndroidDesignerProfile">
     <option name="fullProfile">
       <profile>
@@ -23,12 +34,15 @@
       </GlobalState>
     </option>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8d5b1752-f873-456b-ac07-53dc516f145f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/AdminActivity.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/AdminActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/DBHelper.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/DBHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/NumberGenerator.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/NumberGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/StatisticActivity.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/StatisticActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/statistic.xml" afterPath="$PROJECT_DIR$/res/layout/statistic.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Counting App.iws" />
@@ -36,7 +50,7 @@
     <file path="/main.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372134776661" ignored="false" />
     <file path="/strings.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372172693899" ignored="false" />
     <file path="/a.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371120533826" ignored="false" />
-    <file path="/Dummy.txt" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372222523389" ignored="false" />
+    <file path="/Dummy.txt" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372232830840" ignored="false" />
     <file path="/Randomizer.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371180244528" ignored="false" />
     <file path="/MainActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372222759183" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372142867861" ignored="false" />
@@ -59,11 +73,11 @@
     <file path="/DialogTest.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372059204635" ignored="false" />
     <file path="/statistic.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372223055072" ignored="false" />
     <file path="/Statistic.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372142652238" ignored="false" />
-    <file path="/StatisticActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372224092788" ignored="false" />
-    <file path="/DBHelper.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372218533681" ignored="false" />
+    <file path="/StatisticActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372233740859" ignored="false" />
+    <file path="/DBHelper.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372233220340" ignored="false" />
     <file path="/DBStatisticHelper.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372177759390" ignored="false" />
     <file path="/admin.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372217754108" ignored="false" />
-    <file path="/AdminActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372217913173" ignored="false" />
+    <file path="/AdminActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372232587142" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +92,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -114,7 +129,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -139,7 +153,16 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="36" selection-start="743" selection-end="743" vertical-scroll-proportion="-11.666667">
+            <state line="25" column="44" selection-start="894" selection-end="894" vertical-scroll-proportion="-13.888889">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/AdminActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="40" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -157,11 +180,11 @@
       <file leaf-file-name="StatisticActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/StatisticActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="42" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.63678163">
+            <state line="23" column="21" selection-start="631" selection-end="631" vertical-scroll-proportion="0.5007257">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#735#1547#0" expanded="true" />
-                <element signature="e#1542#1543#0" expanded="true" />
+                <element signature="e#742#1024#0" expanded="true" />
+                <element signature="e#1019#1020#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,7 +196,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="45" selection-start="3207" selection-end="3207" vertical-scroll-proportion="-15.074074">
+            <state line="89" column="45" selection-start="3207" selection-end="3207" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -183,6 +206,15 @@
         <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/NumberGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="29" column="21" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/DBHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="48" selection-start="3112" selection-end="3112" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -218,18 +250,18 @@
         <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/DBStatisticHelper.java" />
         <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MenuActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/admin.xml" />
-        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/AdminActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/DBHelper.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/statistic.xml" />
         <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/NumberGenerator.java" />
+        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/AdminActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/DBHelper.java" />
         <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/StatisticActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-233" />
+    <option name="x" value="-2" />
     <option name="y" value="22" />
     <option name="width" value="1390" />
     <option name="height" value="860" />
@@ -247,7 +279,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>Annotator</id>
+            <id>Deprecation</id>
           </State>
         </selected-state>
       </profile-state>
@@ -431,22 +463,22 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHOW_ALL_PROCESSES" value="true" />
     <property name="project.structure.last.edited" value="Facets" />
-    <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="125" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="141" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="141" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="137" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="/extensions/staged/install.rdf" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="146" />
@@ -455,18 +487,18 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="142" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="137" />
     <property name="DEBUGGABLE_DEVICE" value="80A354043049910583" />
-    <property name="DEBUGGABLE_PROCESS" value="com.dinloq.Counting_App" />
+    <property name="DEBUGGABLE_PROCESS" value="com.dinloq.Perfect_Count" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="one" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
@@ -522,19 +554,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -561,6 +580,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -733,7 +765,11 @@
       <created>1372222526332</created>
       <updated>1372222526332</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="I don't remember what i did&#10;Check string.format!!!">
+      <created>1372224125278</created>
+      <updated>1372224125278</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -757,28 +793,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-233" y="22" width="1390" height="860" extended-state="0" />
+    <frame x="-2" y="22" width="1390" height="860" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3236607" sideWeight="0.6256757" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31919643" sideWeight="0.6256757" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38566554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23323397" sideWeight="0.6256757" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39864865" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39775562" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34577113" sideWeight="0.5004686" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32614556" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35675675" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3254364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29985118" sideWeight="0.6256757" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37432432" sideWeight="0.4995314" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29985118" sideWeight="0.62702703" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37297297" sideWeight="0.4995314" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3236607" sideWeight="0.6256757" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -786,6 +821,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31919643" sideWeight="0.6256757" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -833,7 +869,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added database saving on destroy mainActivity" />
+    <option name="LAST_COMMIT_MESSAGE" value="I don't remember what i did&#10;Check string.format!!!" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -862,6 +898,7 @@
     <MESSAGE value="Added AdminActivity and fixed some database errors" />
     <MESSAGE value="Added database loading in mainActivity" />
     <MESSAGE value="Added database saving on destroy mainActivity" />
+    <MESSAGE value="I don't remember what i did&#10;Check string.format!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -948,33 +985,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/DBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="16" selection-start="2740" selection-end="2740" vertical-scroll-proportion="0.53651685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/AdminActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="74" selection-start="3410" selection-end="3410" vertical-scroll-proportion="0.9578652">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/admin.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="36" selection-start="743" selection-end="743" vertical-scroll-proportion="-11.666667">
           <folding />
         </state>
       </provider>
@@ -984,14 +997,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="45" selection-start="3207" selection-end="3207" vertical-scroll-proportion="-15.074074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+        <state line="89" column="45" selection-start="3207" selection-end="3207" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1003,13 +1009,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/admin.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="44" selection-start="894" selection-end="894" vertical-scroll-proportion="-13.888889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/AdminActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="40" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/DBHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="48" selection-start="3112" selection-end="3112" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/StatisticActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="42" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.63678163">
+        <state line="23" column="21" selection-start="631" selection-end="631" vertical-scroll-proportion="0.5007257">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#735#1547#0" expanded="true" />
-            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#742#1024#0" expanded="true" />
+            <element signature="e#1019#1020#0" expanded="true" />
           </folding>
         </state>
       </provider>

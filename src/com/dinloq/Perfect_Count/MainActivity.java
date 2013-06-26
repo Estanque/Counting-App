@@ -64,7 +64,7 @@ public class MainActivity extends Activity
 	}
 
 	private void loadDataFromDB() {
-		ContentValues cv = DBHelper.loadDataFromDB(this,DBHelper.getCurrentDate());
+		ContentValues cv = DBHelper.loadDataFromDB(this,DBHelper.getDate());
 		if (cv != null) {
 			rightAnswers = cv.getAsInteger(DBHelper.TABLE_RIGHT_FLD);
 			wrongAnswers = cv.getAsInteger(DBHelper.TABLE_WRONG_FLD);
@@ -73,7 +73,7 @@ public class MainActivity extends Activity
 
 	@Override
 	protected void onDestroy() {
-		DBHelper.addDayRecord(rightAnswers + "", wrongAnswers + "", DBHelper.getCurrentDate(), this);
+		DBHelper.addDayRecord(rightAnswers + "", wrongAnswers + "", DBHelper.getDate(), this);
 		//TODO count average of time
 		//TODO Save changes to database
 		super.onDestroy();
