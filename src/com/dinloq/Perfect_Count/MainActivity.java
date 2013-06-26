@@ -5,8 +5,6 @@ import android.app.AlertDialog;
 import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,9 +13,6 @@ import android.widget.Toast;
 import com.dinloq.Perfect_Count.framework.DBHelper;
 import com.dinloq.Perfect_Count.framework.NumberGenerator;
 import com.dinloq.Perfect_Count.framework.TextViewEditor;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class MainActivity extends Activity
 {
@@ -62,8 +57,8 @@ public class MainActivity extends Activity
 		tvRight.setText(rightAnswers + "");
 		tvWrong.setText(wrongAnswers + "");
 		if (rightAnswers + wrongAnswers != 0) {
-			float rel = (float) rightAnswers / (float)(rightAnswers + wrongAnswers);
-			tvRel.setText(NumberGenerator.round(rel, scaleToRound) + "%");
+			//float rel = (float) rightAnswers / (float)(rightAnswers + wrongAnswers);
+			tvRel.setText(NumberGenerator.countRelation(rightAnswers, wrongAnswers, scaleToRound) + "%");
 		} else
 			tvRel.setText("-");
 	}
