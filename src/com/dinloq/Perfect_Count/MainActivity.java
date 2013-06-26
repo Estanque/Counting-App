@@ -29,13 +29,23 @@ public class MainActivity extends Activity
 	TextView tvNum1;
 	TextView tvNum2;
 	TextView tvResult;
+	TextView tvRight;
+	TextView tvWrong;
+	TextView tvRel;
+	TextView tvTime;
 
 	Button buttonCheck;
 	Button buttonReverse;
 
+	// Точность округления
+	private int scaleToRound = 2;
+
 	private int Num1 = 1;
 	private int Num2 = 1;
 	private int TRAIN_MODE = 0;
+
+	private int rightAnswers = 0;
+	private int wrongAnswers = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -44,50 +54,33 @@ public class MainActivity extends Activity
         setContentView(R.layout.main);
 		setupWidgets();
 	    loadSettings();
-	    String i = DBHelper.addDayRecord("4","1",DBHelper.getCurrentDate(),this);//TODO remove after tests
-	    Toast.makeText(this, i + "", Toast.LENGTH_SHORT).show();
-	    //loadDataFromDB();
+	    loadDataFromDB();
 	    waitForReady();
     }
 
-	private void loadDataFromDB() {
-		DBHelper dbHelper = new DBHelper(this);
-		SQLiteDatabase db;
-
-		db = dbHelper.getWritableDatabase();//TODO change to readable
-
-		SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
-		String date = sdf.format(new Date(System.currentTimeMillis()));
-
-		String selection = "date = ?";
-		String[] selectionArgs = new String[] { date };
-
-		Cursor c = db.query(DBHelper.TABLE_STATISTIC, null, selection, selectionArgs, null, null, null );
-
-		if (c != null) {
-			if (c.moveToFirst()) {
-				String str;
-				do {
-					str = "T: ";
-					for (String cn : c.getColumnNames()){
-						str = str.concat(cn + " = "
-							+ c.getString(c.getColumnIndex(cn)));
-					}
-					Toast.makeText(this, str, Toast.LENGTH_LONG).show();
-				} while (c.moveToNext());
-			} else
-				Toast.makeText(this, "no one record", Toast.LENGTH_SHORT).show();
-			c.close();
+	private void displayResults() {
+		tvRight.setText(rightAnswers + "");
+		tvWrong.setText(wrongAnswers + "");
+		if (rightAnswers + wrongAnswers != 0) {
+			float rel = (float) rightAnswers / (float)(rightAnswers + wrongAnswers);
+			//Toast.makeText(this, rel +"", Toast.LENGTH_SHORT).show();
+			tvRel.setText(NumberGenerator.round(rel, scaleToRound) + "%");
 		} else
-			Toast.makeText(this, "Cursor is null", Toast.LENGTH_SHORT).show();
-		dbHelper.close();
-		Toast.makeText(this, "ok", Toast.LENGTH_SHORT).show();
+			tvRel.setText("-");
+	}
+
+	private void loadDataFromDB() {
+		ContentValues cv = DBHelper.loadDataFromDB(this,DBHelper.getCurrentDate());
+		if (cv != null) {
+			rightAnswers = cv.getAsInteger("right");
+			wrongAnswers = cv.getAsInteger("wrong");
+		}
 	}
 
 	@Override
 	protected void onDestroy() {
 		//TODO Save changes to database
-		super.onDestroy();    //To change body of overridden methods use File | Settings | File Templates.
+		super.onDestroy();
 	}
 
 	private void waitForReady() {
@@ -126,6 +119,7 @@ public class MainActivity extends Activity
 	//TODO add timer
 	private void initialize() {
 		//Timer = start value
+		displayResults();
 		Num1 = NumberGenerator.getRandomNumber();
 		Num2 = NumberGenerator.getRandomNumber();
 		tvNum1.setText(String.valueOf(Num1));
@@ -139,6 +133,11 @@ public class MainActivity extends Activity
 		tvResult    = (TextView)    findViewById(R.id.textViewResult);
 		buttonCheck = (Button)      findViewById(R.id.btnCheck);
 		buttonReverse     = (Button)      findViewById(R.id.btnReverse);
+
+		tvRight = (TextView) findViewById(R.id.main_right);
+		tvWrong = (TextView) findViewById(R.id.main_wrong);
+		tvRel = (TextView) findViewById(R.id.main_rel);
+		tvTime = (TextView) findViewById(R.id.main_time);
 	}
 
 	public void onNumClick(View v){
@@ -181,9 +180,12 @@ public class MainActivity extends Activity
 		int result = NumberGenerator.getAnswer(Num1,Num2,TRAIN_MODE);
 		if (toCheck==result){
 			//total_time = this.time - timer; write result
+			rightAnswers++;
 			initialize();
 			Toast.makeText(getApplicationContext(),"Right!",Toast.LENGTH_SHORT).show();
 		} else {
+			wrongAnswers++;
+			displayResults();
 			Toast.makeText(getApplicationContext(),"Wrong!",Toast.LENGTH_SHORT).show();
 		}
 		tvResult.setText("");

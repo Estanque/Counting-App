@@ -84,7 +84,7 @@
 			android:layout_marginRight="4dp"
 			android:background="@android:color/darker_gray"/>
 		<LinearLayout
-			android:layout_weight="8"
+			android:layout_weight="7"
 			android:layout_height="match_parent"
 			android:layout_width="match_parent"
 			android:layout_marginTop="@dimen/main_margin_miny"

@@ -1,6 +1,7 @@
 package com.dinloq.Perfect_Count;
 
 import android.app.Activity;
+import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -31,6 +32,9 @@ public class AdminActivity extends Activity {
 				break;
 			case R.id.btnCheckAll:
 				viewAllRecords();
+				break;
+			case R.id.btnCheckNew:
+				checkDB();
 				break;
 		}
 	}
@@ -103,5 +107,13 @@ public class AdminActivity extends Activity {
 			Toast.makeText(this, "Cursor is null", Toast.LENGTH_SHORT).show();
 		dbHelper.close();
 		Toast.makeText(this, "ok", Toast.LENGTH_SHORT).show();
+	}
+
+	private void checkDB(){
+		ContentValues cv = DBHelper.loadDataFromDB(this, DBHelper.getCurrentDate());
+		if (cv != null)
+			Toast.makeText(this, cv.get("date").toString(), Toast.LENGTH_SHORT).show();
+		else
+			Toast.makeText(this, "cv is null", Toast.LENGTH_SHORT).show();
 	}
 }

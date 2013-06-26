@@ -19,6 +19,13 @@
 		android:layout_height="wrap_content"
 		android:text="check all"/>
 	<Button
+		android:id="@+id/btnCheckNew"
+		android:onClick="onClick"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_height="wrap_content"
+		android:text="new check"/>
+	<Button
 		android:id="@+id/btnCheck2"
 		android:onClick="onClick"
 		android:layout_width="wrap_content"
