@@ -63,7 +63,6 @@ public class MainActivity extends Activity
 		tvWrong.setText(wrongAnswers + "");
 		if (rightAnswers + wrongAnswers != 0) {
 			float rel = (float) rightAnswers / (float)(rightAnswers + wrongAnswers);
-			//Toast.makeText(this, rel +"", Toast.LENGTH_SHORT).show();
 			tvRel.setText(NumberGenerator.round(rel, scaleToRound) + "%");
 		} else
 			tvRel.setText("-");
@@ -72,13 +71,15 @@ public class MainActivity extends Activity
 	private void loadDataFromDB() {
 		ContentValues cv = DBHelper.loadDataFromDB(this,DBHelper.getCurrentDate());
 		if (cv != null) {
-			rightAnswers = cv.getAsInteger("right");
-			wrongAnswers = cv.getAsInteger("wrong");
+			rightAnswers = cv.getAsInteger(DBHelper.TABLE_RIGHT_FLD);
+			wrongAnswers = cv.getAsInteger(DBHelper.TABLE_WRONG_FLD);
 		}
 	}
 
 	@Override
 	protected void onDestroy() {
+		DBHelper.addDayRecord(rightAnswers + "", wrongAnswers + "", DBHelper.getCurrentDate(), this);
+		//TODO count average of time
 		//TODO Save changes to database
 		super.onDestroy();
 	}

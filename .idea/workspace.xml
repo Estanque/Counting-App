@@ -25,12 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d5b1752-f873-456b-ac07-53dc516f145f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/AdminActivity.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/AdminActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/DBHelper.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/DBHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/NumberGenerator.java" afterPath="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/NumberGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/admin.xml" afterPath="$PROJECT_DIR$/res/layout/admin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Counting App.iws" />
@@ -38,9 +33,9 @@
     <file path="/main.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372134776661" ignored="false" />
     <file path="/strings.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372172693899" ignored="false" />
     <file path="/a.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371120533826" ignored="false" />
-    <file path="/Dummy.txt" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372216638535" ignored="false" />
+    <file path="/Dummy.txt" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372221535810" ignored="false" />
     <file path="/Randomizer.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371180244528" ignored="false" />
-    <file path="/MainActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372221277718" ignored="false" />
+    <file path="/MainActivity.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372222333949" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1372142867861" ignored="false" />
     <file path="/a.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1371120531693" ignored="false" />
     <file path="/sample.java" changelist="8d5b1752-f873-456b-ac07-53dc516f145f" time="1370779334239" ignored="false" />
@@ -126,22 +121,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="52" selection-start="1782" selection-end="1782" vertical-scroll-proportion="0.0">
+            <state line="63" column="47" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.27586207">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="41" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.46979865">
+            <state line="146" column="45" selection-start="4808" selection-end="4808" vertical-scroll-proportion="-1.1111112">
               <folding />
             </state>
           </provider>
@@ -159,7 +154,7 @@
       <file leaf-file-name="MenuActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MenuActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
+            <state line="15" column="5" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -248,14 +243,16 @@
         <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/AdminActivity.java" />
         <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/DBHelper.java" />
         <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/NumberGenerator.java" />
-        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="38" />
+    <option name="y" value="22" />
+    <option name="width" value="1390" />
+    <option name="height" value="860" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -305,154 +302,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting-App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting-App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Perfect_Count" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting-App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Perfect_Count" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting-App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting-App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting-App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-mdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting-App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-ldpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Counting-App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-hdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
@@ -484,7 +334,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="one" />
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -748,7 +598,11 @@
       <created>1372182218457</created>
       <updated>1372182218457</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added database loading in mainActivity">
+      <created>1372221541606</created>
+      <updated>1372221541606</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -772,14 +626,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="38" y="22" width="1390" height="860" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3236607" sideWeight="0.6256757" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31919643" sideWeight="0.6256757" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38566554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22485632" sideWeight="0.6546135" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23323397" sideWeight="0.6256757" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -792,8 +646,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496361" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30129126" sideWeight="0.62468827" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34538653" sideWeight="0.4995314" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3010432" sideWeight="0.6256757" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37432432" sideWeight="0.4995314" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -848,7 +702,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added AdminActivity and fixed some database errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added database loading in mainActivity" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -875,6 +729,7 @@
     <MESSAGE value="Added ready Dialog" />
     <MESSAGE value="Added SQLite Database" />
     <MESSAGE value="Added AdminActivity and fixed some database errors" />
+    <MESSAGE value="Added database loading in mainActivity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -983,13 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MenuActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/NumberGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="42" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0">
@@ -1004,6 +852,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="45" selection-start="4808" selection-end="4808" vertical-scroll-proportion="-1.1111112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MenuActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="5" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/framework/DBHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="16" selection-start="2740" selection-end="2740" vertical-scroll-proportion="0.0">
@@ -1013,17 +878,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dinloq/Perfect_Count/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="52" selection-start="1782" selection-end="1782" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="41" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.46979865">
+        <state line="63" column="47" selection-start="1662" selection-end="1662" vertical-scroll-proportion="0.27586207">
           <folding />
         </state>
       </provider>
