@@ -25,15 +25,19 @@ public class NumberGenerator {
 		return 0;
 	}
 
-	public static float countRelation(int right, int wrong, int scale) {
+	public static float round(float number, int scale){
+		int pow = 10;
+		for (int i = 1; i < scale; i++)
+			pow *= 10;
+		float tmp = number * pow;
+		return (float) (int) ((tmp - (int) tmp) >= 0.5f ? tmp + 1 : tmp) / pow;
+	}
+
+	public static float round(int right, int wrong, int scale) {
 		if (right + wrong == 0) {
 			return 0;
 		}
 		float sum = (float) right / (right + wrong) * 100;
-		int pow = 10;
-		for (int i = 1; i < scale; i++)
-			pow *= 10;
-		float tmp = sum * pow;
-		return (float) (int) ((tmp - (int) tmp) >= 0.5f ? tmp + 1 : tmp) / pow;
+		return round(sum, scale);
 	}
 }

@@ -49,7 +49,7 @@ public class StatisticActivity extends Activity {
 			right = cv.getAsInteger(DBHelper.TABLE_RIGHT_FLD);
 			wrong = cv.getAsInteger(DBHelper.TABLE_WRONG_FLD);
 		}
-		Float rel = NumberGenerator.countRelation(right,wrong, SCALE);
+		Float rel = NumberGenerator.round(right, wrong, SCALE);
 		tvRight.setText(right + "");
 		tvWrong.setText(wrong + "");
 		tvRel.setText(rel + "");

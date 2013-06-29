@@ -14,6 +14,8 @@ import com.dinloq.Perfect_Count.framework.DBHelper;
 import com.dinloq.Perfect_Count.framework.NumberGenerator;
 import com.dinloq.Perfect_Count.framework.TextViewEditor;
 
+import java.util.ArrayList;
+
 public class MainActivity extends Activity
 {
 	Boolean directionRight;
@@ -41,8 +43,11 @@ public class MainActivity extends Activity
 
 	private int rightAnswers = 0;
 	private int wrongAnswers = 0;
+	private ArrayList<Float> timerList = new ArrayList<Float>();
+	private long timerStartValue;
+	private long timerEndValue;
 
-    @Override
+	@Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
@@ -58,9 +63,19 @@ public class MainActivity extends Activity
 		tvWrong.setText(wrongAnswers + "");
 		if (rightAnswers + wrongAnswers != 0) {
 			//float rel = (float) rightAnswers / (float)(rightAnswers + wrongAnswers);
-			tvRel.setText(NumberGenerator.countRelation(rightAnswers, wrongAnswers, scaleToRound) + "%");
+			tvRel.setText(NumberGenerator.round(rightAnswers, wrongAnswers, scaleToRound) + "%");
 		} else
 			tvRel.setText("-");
+		float avgTimer = 0;
+		if (!timerList.isEmpty()) {
+			float sum = 0;
+			for (float t : timerList){
+				sum += t;
+			}
+			float tmp =
+			avgTimer = NumberGenerator.round(sum / timerList.size(), scaleToRound);
+		}
+		tvTime.setText(avgTimer + "");
 	}
 
 	private void loadDataFromDB() {
@@ -120,6 +135,7 @@ public class MainActivity extends Activity
 		Num2 = NumberGenerator.getRandomNumber();
 		tvNum1.setText(String.valueOf(Num1));
 		tvNum2.setText(String.valueOf(Num2));
+		timerStartValue = System.currentTimeMillis();
 	}
 
 
@@ -142,7 +158,6 @@ public class MainActivity extends Activity
 		String str = temp.getTag().toString();
 		TextViewEditor.addText(tvResult,str,directionRight);
 	}
-
 
 	//TODO Why the btnReverse is so necessary? so many excess code...
 	public void onClick(View v){
@@ -176,9 +191,12 @@ public class MainActivity extends Activity
 		int result = NumberGenerator.getAnswer(Num1,Num2,TRAIN_MODE);
 		if (toCheck==result){
 			//total_time = this.time - timer; write result
+			timerEndValue = System.currentTimeMillis();
+			float temp = (float) (timerEndValue - timerStartValue)/1000;
+			timerList.add(temp);
 			rightAnswers++;
 			initialize();
-			Toast.makeText(getApplicationContext(),"Right!",Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(),"Right! time - " + temp, Toast.LENGTH_SHORT).show();
 		} else {
 			wrongAnswers++;
 			displayResults();
