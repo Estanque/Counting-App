@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.view.Gravity;
 import android.widget.Toast;
 import com.dinloq.Perfect_Count.MainActivity;
+import com.dinloq.Perfect_Count.SettingsActivity;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -19,15 +20,12 @@ public class Helper {
 		for (int i = 0; i < num; i++) {
 			pow *= 10;
 		}
-		//int result = (pow * 10) - 1 - pow;
-		int result = random.nextInt((pow * 10) - 1 - pow) + pow;
-		return result;
+		return random.nextInt((pow * 10) - 1 - pow) + pow;
 	}
 
 	//TODO make different random numbers (10,100,1000,10000) is settings
 	public static int getRandomNumber(){
-		int result = random.nextInt(8999) + 1000;
-		return result;
+		return random.nextInt(8999) + 1000;
 	}
 
 	//TODO Различные операции(Умножение вычитание деление)
@@ -80,11 +78,11 @@ public class Helper {
 	public static int getRange(SharedPreferences sp, int operation) {
 		switch (operation){
 			case 0:
-				return sp.getInt("set_add_range", 0);
+				return sp.getInt(SettingsActivity.SET_ADD_RANGE, 0);
 			case 1:
-				return sp.getInt("set_multi_range", 0);
+				return sp.getInt(SettingsActivity.SET_MULTI_RANGE, 0);
 			case 2:
-				return sp.getInt("set_sub_range", 0);
+				return sp.getInt(SettingsActivity.SET_SUB_RANGE, 0);
 		}
 		return -1;
 	}

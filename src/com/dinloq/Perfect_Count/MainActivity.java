@@ -42,7 +42,6 @@ public class MainActivity extends Activity
 	private int wrongAnswers = 0;
 	private ArrayList<Float> timerList = new ArrayList<Float>();
 	private long timerStartValue;
-	private long timerEndValue;
 
 	@Override
     public void onCreate(Bundle savedInstanceState)
@@ -71,7 +70,7 @@ public class MainActivity extends Activity
 		if (cv != null) {
 			rightAnswers = cv.getAsInteger(DBHelper.TABLE_RIGHT_FLD);
 			wrongAnswers = cv.getAsInteger(DBHelper.TABLE_WRONG_FLD);
-			timerList.add(cv.getAsFloat("time"));
+			timerList.add(cv.getAsFloat(DBHelper.TABLE_TIME_FLD));
 		}
 	}
 
@@ -109,8 +108,8 @@ public class MainActivity extends Activity
 		TextView tvOperation = (TextView) findViewById(R.id.tvOperation);
 		tvOperation.setText(operationIcons[TRAIN_MODE]);
 		//Get preferences
-		SharedPreferences sPref = getSharedPreferences("settings", MODE_PRIVATE);
-		directionRight = !sPref.getBoolean("set_reverse", false);
+		SharedPreferences sPref = getSharedPreferences(SettingsActivity.SETTINGS, MODE_PRIVATE);
+		directionRight = !sPref.getBoolean(SettingsActivity.SET_REVERSE, false);
 		setReverseButtonText();
 
 		COUNT_RANGE = Helper.getRange(sPref, TRAIN_MODE);
@@ -177,7 +176,7 @@ public class MainActivity extends Activity
 		}
 		int result = Helper.getAnswer(Num1, Num2, TRAIN_MODE);
 		if (toCheck==result){
-			timerEndValue = System.currentTimeMillis();
+			long timerEndValue = System.currentTimeMillis();
 			float temp = (float) (timerEndValue - timerStartValue)/1000;
 			timerList.add(temp);
 			rightAnswers++;
