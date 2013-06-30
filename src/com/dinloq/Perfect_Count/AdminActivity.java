@@ -8,11 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 import com.dinloq.Perfect_Count.framework.DBHelper;
-import com.dinloq.Perfect_Count.framework.NumberGenerator;
+import com.dinloq.Perfect_Count.framework.Helper;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class AdminActivity extends Activity {
@@ -42,17 +40,17 @@ public class AdminActivity extends Activity {
 	}
 
 	private void addRandom() {
-		String right = String.valueOf(NumberGenerator.getRandomNumber());
-		String wrong = String.valueOf(NumberGenerator.getRandomNumber());
+		String right = String.valueOf(Helper.getRandomNumber());
+		String wrong = String.valueOf(Helper.getRandomNumber());
 		String time = DBHelper.getDate();
-		String test = DBHelper.addDayRecord(right, wrong, time, this);
+		String test = DBHelper.addDayRecord(right, wrong, 10f, time, this);
 		Toast.makeText(this, "added "+ test, Toast.LENGTH_LONG).show();
 	}
 
 	private void viewAllRecords(){
 		DBHelper dbHelper = new DBHelper(this);
 		SQLiteDatabase db;
-		db = dbHelper.getReadableDatabase();//TODO change to readable
+		db = dbHelper.getReadableDatabase();
 
 		Cursor c = db.query(DBHelper.TABLE_STATISTIC, null, null, null, null, null, null);
 
@@ -78,8 +76,8 @@ public class AdminActivity extends Activity {
 	}
 
 	private void checkSQLday() {
-		GregorianCalendar gc = new GregorianCalendar();
-		Toast.makeText(this, gc.get(Calendar.YEAR) + "", Toast.LENGTH_SHORT).show();
+		int temp = Helper.getRandomNumber(0);
+		Toast.makeText(this, temp + "", Toast.LENGTH_SHORT).show();
 	}
 
 	private void checkDB(){

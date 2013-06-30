@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.CalendarView;
 import android.widget.TextView;
 import com.dinloq.Perfect_Count.framework.DBHelper;
-import com.dinloq.Perfect_Count.framework.NumberGenerator;
+import com.dinloq.Perfect_Count.framework.Helper;
 
 import java.util.GregorianCalendar;
 
@@ -49,7 +49,7 @@ public class StatisticActivity extends Activity {
 			right = cv.getAsInteger(DBHelper.TABLE_RIGHT_FLD);
 			wrong = cv.getAsInteger(DBHelper.TABLE_WRONG_FLD);
 		}
-		Float rel = NumberGenerator.round(right, wrong, SCALE);
+		Float rel = Helper.round(right, wrong, SCALE);
 		tvRight.setText(right + "");
 		tvWrong.setText(wrong + "");
 		tvRel.setText(rel + "");

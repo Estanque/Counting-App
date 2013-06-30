@@ -9,19 +9,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.dinloq.Perfect_Count.framework.DBHelper;
-import com.dinloq.Perfect_Count.framework.NumberGenerator;
-import com.dinloq.Perfect_Count.framework.TextViewEditor;
+import com.dinloq.Perfect_Count.framework.Helper;
+import com.dinloq.Perfect_Count.framework.WidgetHelper;
 
 import java.util.ArrayList;
 
 public class MainActivity extends Activity
 {
 	Boolean directionRight;
-	//Timer
-	//TODO Catch all values of Timer in ArrayList, after closing Activity calculate the average and write into database
-	// (avg.database + avg.this /2)
 
 	TextView tvNum1;
 	TextView tvNum2;
@@ -35,11 +31,12 @@ public class MainActivity extends Activity
 	Button buttonReverse;
 
 	// Точность округления
-	private int scaleToRound = 2;
+	public static int scaleToRound = 2;
 
 	private int Num1 = 1;
 	private int Num2 = 1;
 	private int TRAIN_MODE = 0;
+	private int COUNT_RANGE = 0;
 
 	private int rightAnswers = 0;
 	private int wrongAnswers = 0;
@@ -63,19 +60,10 @@ public class MainActivity extends Activity
 		tvWrong.setText(wrongAnswers + "");
 		if (rightAnswers + wrongAnswers != 0) {
 			//float rel = (float) rightAnswers / (float)(rightAnswers + wrongAnswers);
-			tvRel.setText(NumberGenerator.round(rightAnswers, wrongAnswers, scaleToRound) + "%");
+			tvRel.setText(Helper.round(rightAnswers, wrongAnswers, scaleToRound) + "%");
 		} else
 			tvRel.setText("-");
-		float avgTimer = 0;
-		if (!timerList.isEmpty()) {
-			float sum = 0;
-			for (float t : timerList){
-				sum += t;
-			}
-			float tmp =
-			avgTimer = NumberGenerator.round(sum / timerList.size(), scaleToRound);
-		}
-		tvTime.setText(avgTimer + "");
+		tvTime.setText(Helper.getAvg(timerList) + "");
 	}
 
 	private void loadDataFromDB() {
@@ -83,14 +71,14 @@ public class MainActivity extends Activity
 		if (cv != null) {
 			rightAnswers = cv.getAsInteger(DBHelper.TABLE_RIGHT_FLD);
 			wrongAnswers = cv.getAsInteger(DBHelper.TABLE_WRONG_FLD);
+			timerList.add(cv.getAsFloat("time"));
 		}
 	}
 
 	@Override
 	protected void onDestroy() {
-		DBHelper.addDayRecord(rightAnswers + "", wrongAnswers + "", DBHelper.getDate(), this);
-		//TODO count average of time
-		//TODO Save changes to database
+		float avgTime = Helper.getAvg(timerList);
+		DBHelper.addDayRecord(rightAnswers + "", wrongAnswers + "", avgTime, DBHelper.getDate(), this);
 		super.onDestroy();
 	}
 
@@ -124,15 +112,14 @@ public class MainActivity extends Activity
 		SharedPreferences sPref = getSharedPreferences("settings", MODE_PRIVATE);
 		directionRight = !sPref.getBoolean("set_reverse", false);
 		setReverseButtonText();
-		//TODO reading sql database
+
+		COUNT_RANGE = Helper.getRange(sPref, TRAIN_MODE);
 	}
 
-	//TODO add timer
 	private void initialize() {
-		//Timer = start value
 		displayResults();
-		Num1 = NumberGenerator.getRandomNumber();
-		Num2 = NumberGenerator.getRandomNumber();
+		Num1 = Helper.getRandomNumber(COUNT_RANGE);
+		Num2 = Helper.getRandomNumber(COUNT_RANGE);
 		tvNum1.setText(String.valueOf(Num1));
 		tvNum2.setText(String.valueOf(Num2));
 		timerStartValue = System.currentTimeMillis();
@@ -156,7 +143,7 @@ public class MainActivity extends Activity
 		// number of dial button gets from tag field in xml
 		Button temp = (Button) findViewById(v.getId());
 		String str = temp.getTag().toString();
-		TextViewEditor.addText(tvResult,str,directionRight);
+		WidgetHelper.addTVText(tvResult, str, directionRight);
 	}
 
 	//TODO Why the btnReverse is so necessary? so many excess code...
@@ -188,19 +175,18 @@ public class MainActivity extends Activity
 		if (tvResult.getText().toString().length()>0){
 			toCheck = Integer.parseInt(tvResult.getText().toString());
 		}
-		int result = NumberGenerator.getAnswer(Num1,Num2,TRAIN_MODE);
+		int result = Helper.getAnswer(Num1, Num2, TRAIN_MODE);
 		if (toCheck==result){
-			//total_time = this.time - timer; write result
 			timerEndValue = System.currentTimeMillis();
 			float temp = (float) (timerEndValue - timerStartValue)/1000;
 			timerList.add(temp);
 			rightAnswers++;
 			initialize();
-			Toast.makeText(getApplicationContext(),"Right! time - " + temp, Toast.LENGTH_SHORT).show();
+			Helper.showToast("Right! Time - " + temp, getApplicationContext());
 		} else {
 			wrongAnswers++;
 			displayResults();
-			Toast.makeText(getApplicationContext(),"Wrong!",Toast.LENGTH_SHORT).show();
+			Helper.showToast("Wrong!", getApplicationContext());
 		}
 		tvResult.setText("");
 	}

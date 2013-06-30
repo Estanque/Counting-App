@@ -9,9 +9,9 @@
 	<string name="menu_statistic">Statistic</string>
 	<string name="menu_choose_title">Choose mode</string>
 	<string-array name="menu_mode_array">
-		<item>Addition</item>
-		<item>Multiplication</item>
-		<item>Subtraction</item>
+		<item>@string/addition</item>
+		<item>@string/multiplication</item>
+		<item>@string/subtraction</item>
 	</string-array>
 	<string-array name="operation_icon">
 		<item>+</item>
@@ -22,6 +22,13 @@
 	<!-- Settings strings   -->
 	<string name="set_reverse">Always reverse mode</string>
 	<string name="set_save">Save</string>
+	<string name="set_count_range">Counting range</string>
+	<string-array name="set_range">
+		<item>10–100</item>
+		<item>100–1000</item>
+		<item>1000–10000</item>
+		<item>10000–100000</item>
+	</string-array>
 
 	<!-- Main strings -->
 	<string name="main_clear">Clear</string>
@@ -34,5 +41,10 @@
 	<!-- Statistic strings -->
 	<string name="stat_details">Details</string>
 	<string name="stat_today">Today Statistic</string>
+
+	<!-- Special strings -->
+	<string name="addition">Addition</string>
+	<string name="multiplication">Multiplication</string>
+	<string name="subtraction">Subtraction</string>
 
 </resources>
